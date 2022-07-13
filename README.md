@@ -1,5 +1,6 @@
 # logseq-auto-commit
 auto sync logseq files
+
 我目前正在使用的就是 Git 方案，该如何创建库之类的操作我就不再说了，社群和网上有很多资料，我这里单独说下我是怎么让 Git 实现多端（多个 window 间同步）同步，同时解决多端无脑同步的问题
 
 目前 Github 上有两三个专门针对 Logseq 写的自动 Commit 工具，分别是
