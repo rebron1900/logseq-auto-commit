@@ -71,7 +71,8 @@ function Start-GitAutoCommitAndPush {
     [string] $status = (& git status)
     if (!$status.Contains("working tree clean")) {
         git add .
-        git commit -m "auto commit"
+        $time = Get-Date
+        git commit -m ("auto commit - "+$time)
     }
     if ($PushToServer) {
         [string] $output = (&  git push $Server $Branch 2>&1)        
